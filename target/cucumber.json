@@ -1,0 +1,106 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-03T23:39:01.167Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8727944000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooksteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verify User is able to login",
+        "description": "",
+        "id": "user-portal-sign-up-page-functionalities-verify-that-user-is-able-to-sign-up-and-logged-in.;verify-user-is-able-to-login",
+        "after": [
+          {
+            "result": {
+              "duration": 3993000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooksteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1392031000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to Alteon.io home page and clicks on the login link",
+            "match": {
+              "location": "stepDefinition.UserSignInSignout.user_navigates_to_alteon_io_home_page_and_clicks_on_the_login_link()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1569020000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters email and password in appropriate fields",
+            "match": {
+              "location": "stepDefinition.UserSignInSignout.user_enters_email_and_password_in_appropriate_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6683616000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user fatches the otp from twilio and enters into alteon",
+            "match": {
+              "location": "stepDefinition.UserSignInSignout.Then_user_fatches_the_otp_from_twilio_and_enters_into_alteon()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 89844000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user logs in by clicking on submit button",
+            "match": {
+              "location": "stepDefinition.UserSignInSignout.When_user_logs_in_by_clicking_on_submit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user signs out",
+            "match": {
+              "location": "stepDefinition.UserSignInSignout.user_signs_out()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "User Portal Sign Up Page Functionalities Verify that User is able to sign up and logged in.",
+    "description": "",
+    "id": "user-portal-sign-up-page-functionalities-verify-that-user-is-able-to-sign-up-and-logged-in.",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/LoginLogout.feature",
+    "tags": []
+  }
+]
