@@ -1,13 +1,13 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-09-08T18:55:59.638Z",
+        "start_timestamp": "2021-09-10T18:14:58.851Z",
         "before": [
           {
             "result": {
-              "duration": 9084841000,
+              "duration": 8981670000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "Verify User is able to login",
+        "line": 5,
+        "name": "Share Project",
         "description": "",
-        "id": "user-portal-sign-up-page-functionalities-verify-that-user-is-able-to-sign-up-and-logged-in.;verify-user-is-able-to-login",
+        "id": "user-shares-a-project-to-another-user;share-project",
         "after": [
           {
             "result": {
-              "duration": 3860000,
+              "duration": 152966000,
               "status": "passed"
             },
             "match": {
@@ -35,72 +35,84 @@
         "steps": [
           {
             "result": {
-              "duration": 1376555000,
+              "duration": 10041156000,
               "status": "passed"
             },
             "line": 6,
-            "name": "User navigates to Alteon.io home page and clicks on the login link",
+            "name": "user sign in to Alteon",
             "match": {
-              "location": "stepDefinition.UserSignInSignout.user_navigates_to_alteon_io_home_page_and_clicks_on_the_login_link()"
+              "location": "stepDefinition.ShareaProject.user_sign_in_to_alteon()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1450942000,
+              "duration": 3767314000,
               "status": "passed"
             },
             "line": 7,
-            "name": "user enters email and password in appropriate fields",
+            "name": "user creates a project",
             "match": {
-              "location": "stepDefinition.UserSignInSignout.user_enters_email_and_password_in_appropriate_fields()"
+              "location": "stepDefinition.ShareaProject.user_creates_a_project()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 6824824000,
+              "duration": 2543719000,
               "status": "passed"
             },
             "line": 8,
-            "name": "user fatches the otp from twilio and enters into alteon",
+            "name": "user clicks on share project button",
             "match": {
-              "location": "stepDefinition.UserSignInSignout.Then_user_fatches_the_otp_from_twilio_and_enters_into_alteon()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 98053000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user logs in by clicking on submit button",
-            "match": {
-              "location": "stepDefinition.UserSignInSignout.When_user_logs_in_by_clicking_on_submit_button()"
+              "location": "stepDefinition.ShareaProject.user_clicks_on_share_project_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2291079000,
+              "duration": 1228097000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters email and selects permission",
+            "match": {
+              "location": "stepDefinition.ShareaProject.user_enters_email_and_selects_permission()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2741495000,
               "status": "passed"
             },
             "line": 10,
-            "name": "user signs out",
+            "name": "user shares the project",
             "match": {
-              "location": "stepDefinition.UserSignInSignout.user_signs_out()"
+              "location": "stepDefinition.ShareaProject.user_shares_the_project()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3776595000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user sign out",
+            "match": {
+              "location": "stepDefinition.ShareaProject.user_sign_out()"
+            },
+            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "User Portal Sign Up Page Functionalities Verify that User is able to sign up and logged in.",
+    "name": "user shares a project to another user",
     "description": "",
-    "id": "user-portal-sign-up-page-functionalities-verify-that-user-is-able-to-sign-up-and-logged-in.",
+    "id": "user-shares-a-project-to-another-user",
     "keyword": "Feature",
-    "uri": "file:src/test/java/Features/LoginLogout.feature",
+    "uri": "file:src/test/java/Features/ShareProject.feature",
     "tags": []
   }
 ]
