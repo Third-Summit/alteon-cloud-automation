@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 10 14:14:58 EDT 2021</td>
+<td>Started on:</td><td>Fri Sep 10 17:19:54 EDT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>33 seconds (33812 ms)</td>
+<tr><td>Total time:</td><td>109 seconds (109315 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,8 +76,29 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Share Project", "Optional[user shares a project to another user]"</td>
-<td></td>
-<td>33</td>
+<td><div><pre>com.twilio.exception.ApiException: Authenticate
+	at com.twilio.rest.api.v2010.account.MessageReader.pageForRequest(MessageReader.java:243)
+	at com.twilio.rest.api.v2010.account.MessageReader.firstPage(MessageReader.java:170)
+	at com.twilio.rest.api.v2010.account.MessageReader.read(MessageReader.java:150)
+	at com.twilio.base.Reader.read(Reader.java:24)
+	at pageObjectModel.ShareProject_POM.getMessages2(ShareProject_POM.java:167)
+	at pageObjectModel.ShareProject_POM.getMessage2(ShareProject_POM.java:162)
+	at pageObjectModel.ShareProject_POM.fetchOtp(ShareProject_POM.java:173)
+	at stepDefinition.ShareaProject.And_otp_is_fetched(ShareaProject.java:77)
+	at ✽.otp is fetched(file:///Users/duhachowdhury/eclipse-workspace/AlteonIo/src/test/java/Features/ShareProject.feature:16)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1696136701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1696136701'><pre>com.twilio.exception.ApiException: Authenticate
+	at com.twilio.rest.api.v2010.account.MessageReader.pageForRequest(MessageReader.java:243)
+	at com.twilio.rest.api.v2010.account.MessageReader.firstPage(MessageReader.java:170)
+	at com.twilio.rest.api.v2010.account.MessageReader.read(MessageReader.java:150)
+	at com.twilio.base.Reader.read(Reader.java:24)
+	at pageObjectModel.ShareProject_POM.getMessages2(ShareProject_POM.java:167)
+	at pageObjectModel.ShareProject_POM.getMessage2(ShareProject_POM.java:162)
+	at pageObjectModel.ShareProject_POM.fetchOtp(ShareProject_POM.java:173)
+	at stepDefinition.ShareaProject.And_otp_is_fetched(ShareaProject.java:77)
+	at ✽.otp is fetched(file:///Users/duhachowdhury/eclipse-workspace/AlteonIo/src/test/java/Features/ShareProject.feature:16)
+</pre></div></td>
+<td>108</td>
 <td>runner.TestRunner@a4102b8</td></tr>
 </table><p>
 </body>

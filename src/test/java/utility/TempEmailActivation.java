@@ -33,7 +33,7 @@ public class TempEmailActivation {
         driver.findElement(By.xpath("//input[@name='firstName']")).sendKeys("TestFirstName");
         driver.findElement(By.xpath("//input[@name='lastName']")).sendKeys("TestLastName");
         driver.findElement(By.xpath("//input[@name='email']")).sendKeys(email);
-        driver.findElement(By.xpath("//input[@name='phoneNumber-visual']")).sendKeys("0010000000");
+        driver.findElement(By.xpath("//input[@name='phoneNumber-visual']")).sendKeys("0010002000");
         driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Alteon@123");
         driver.findElement(By.xpath("//input[@name='passwordConfirm']")).sendKeys("Alteon@123");
         driver.findElement(By.xpath("//button[contains(text(),'Create an Account')]")).click();
@@ -43,6 +43,7 @@ public class TempEmailActivation {
         driver.navigate().refresh();
         Thread.sleep(3000);
         JavascriptExecutor js = (JavascriptExecutor)driver;
+
         js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
         //driver.findElement(By.xpath("//a[contains(text(),'Welcome to Alteon Cloud. Please activate your account.')]")).click();
         driver.findElement(By.xpath("//a[@title = 'VERIFY']")).click();
