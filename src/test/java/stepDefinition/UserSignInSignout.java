@@ -36,8 +36,8 @@ public class UserSignInSignout extends Config{
 	}
 
    @And ("user signs out")
-   public void user_signs_out() {
-	 //  logIn.signOut();
+   public void user_signs_out() throws InterruptedException {
+	  logIn.signOut();
    }
 
 

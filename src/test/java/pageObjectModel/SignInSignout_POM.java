@@ -3,6 +3,7 @@ package pageObjectModel;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -49,7 +50,7 @@ public class SignInSignout_POM extends Config{
 	    @FindBy(xpath = "//*[@id=\"root\"]/main/div[1]/div[1]/div/div[2]/div/div/div")
 	    public WebElement signOutDropDown;
 	    
-	    @FindBy(xpath = "//*[@id=\"tippy-3\"]/div/div/div/div/ul/li/button/div")
+	    @FindBy(xpath = "//span[text()='Sign Out']/parent::div/parent::button")
 	    public WebElement signOut;
 	    
 	    
@@ -89,10 +90,10 @@ public class SignInSignout_POM extends Config{
 			submitButton.click();
 		}
 
-		public void signOut() {
-			WebDriverWait wait = new WebDriverWait(driver , 50);
-			wait.until(ExpectedConditions.elementToBeClickable(signOutDropDown)).click();
-			wait.until(ExpectedConditions.elementToBeClickable(signOut)).click();
-		//	signOut.click();
+		public void signOut() throws InterruptedException {
+			signOutDropDown.click();
+		    Thread.sleep(500);
+		    signOut.click();
+
 		}
 }

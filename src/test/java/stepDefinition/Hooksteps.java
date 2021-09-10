@@ -51,7 +51,7 @@ public class Hooksteps extends Config{
 				System.out.println(scenario.getName());
 			}
 		} finally {
-	//driver.quit();
+			driver.quit();
 		}
 	}
 
