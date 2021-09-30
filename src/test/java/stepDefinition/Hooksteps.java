@@ -16,7 +16,7 @@ public class Hooksteps extends Config{
 	static String browserType = System.getProperty("browser");
 	// default browser and env
 	static String defaultBrowser = "ch";
-	static String defaultEnv = "dev";
+	static String defaultEnv = "qa";
 
 	@Before
 	public void openBrowser(){
@@ -28,9 +28,11 @@ public class Hooksteps extends Config{
 		}
 		driver = initDriver (browserType);
 		switch (baseURL){
-
+		case "qa":
+			url = "https://qa.alteon.io/";
+ 
 		case "dev":
-			url = "https://v1.dev.alteon.io/";
+			url = "https://qa.alteon.io/";
 			break;
 		case "pre_prod":
 			url = "https://alteon.io/";
@@ -51,7 +53,7 @@ public class Hooksteps extends Config{
 				System.out.println(scenario.getName());
 			}
 		} finally {
-			driver.quit();
+		driver.quit();
 		}
 	}
 

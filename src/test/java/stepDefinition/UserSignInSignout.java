@@ -25,18 +25,15 @@ public class UserSignInSignout extends Config{
 		logIn.enterEmailPassword();
 	}
 	
-	@Then ("user fatches the otp from twilio and enters into alteon")
-	public void Then_user_fatches_the_otp_from_twilio_and_enters_into_alteon() throws InterruptedException {
-		logIn.fetchingOTPfromTwilio();
+	@Then ("user signs in after entering correct OTP")
+	public void user_signs_in_after_entering_correct_OTP() throws InterruptedException {
+		//logIn.fetchingOTPfromTwilio();
+		logIn.enteringOTP();
 	}
 	
-	@When ("user logs in by clicking on submit button")
-	public void When_user_logs_in_by_clicking_on_submit_button() {
-		logIn.hitSubmitButton();
-	}
 
    @And ("user signs out")
-   public void user_signs_out() throws InterruptedException {
+   public void user_signs_out() throws InterruptedException  {
 	  logIn.signOut();
    }
 

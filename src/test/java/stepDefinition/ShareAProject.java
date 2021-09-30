@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 import pageObjectModel.ShareProjectAndJoinProject_POM;
 import utility.Utils;
 
-public class ShareAndJoinaProject extends Config{
+public class ShareAProject extends Config{
 
 
 
@@ -18,12 +18,12 @@ public class ShareAndJoinaProject extends Config{
 	@Given("user sign in to Alteon")
 	public void user_sign_in_to_alteon() throws InterruptedException {
 
-		util.logIn();
+		util.log_in();
 
 	}
 
-	@And ("user creates a project")
-	public void user_creates_a_project() throws InterruptedException {
+	@And ("user creates a test project")
+	public void user_creates_a_test_project() throws InterruptedException {
 		sharePro.projectCreation();
 
 	}
@@ -48,41 +48,10 @@ public class ShareAndJoinaProject extends Config{
     
     @Then ("user sign out")
     public void user_sign_out() throws InterruptedException {
-           util.signOut();
+        //   util.log_out();
 	}
 
-    @And ("navigate to google and open emailfake")
-    public void And_navigate_to_google_and_open_emailfake() throws InterruptedException {
-    	
-    	        sharePro.OpenEmailFake();			
-    }
     
-    @And ("user copies the project join code")
-    public void  And_user_copies_the_project_join_code() throws InterruptedException {
-    	sharePro.userCopiesCodeFromEmailfake();
-    }
-    
-    @And ("reopen Alteon")
-    public void reopen_Alteon () {
-    	sharePro.revisitAlteonIo();
-    }
-    
-    @And ("non owner signs into Alteon")
-    public void nonOwnerLogIn () throws InterruptedException {
-    	sharePro.nonOwnerSignIn();
-    }
-    
-    @And ("otp is fetched")
-    public void  And_otp_is_fetched() {
-    	sharePro.fetchOtp();
-    }
-
-    @And ("user joins project")
-    public void  user_joins_project () throws InterruptedException {
-    	sharePro.joinProject();
-    }
-
-
 
 
 }

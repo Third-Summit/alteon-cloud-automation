@@ -41,7 +41,7 @@ public class ShareProjectAndJoinProject_POM extends Config{
 	WebElement inputProjectName;
 
 
-	@FindBy(xpath = "//button[@type='submit' and text()='Create']")
+	@FindBy(xpath = "//button[@type='submit']")
 	WebElement createButton;
 
 	@FindBy(xpath = "(//h2[text()='Test-Project-1']/parent::div//div[@class='Dropdown_trigger__mz0Fr Dropdown_trigger-theme-quickview__2HfZ0'])[1]")
@@ -56,28 +56,40 @@ public class ShareProjectAndJoinProject_POM extends Config{
 	@FindBy(css = "#permission")
 	WebElement selectPermission;
 
-	@FindBy(xpath = "//button[@class=\"Button_root__1LFu4 ButtonLinkStyles_root__2drze ButtonLinkStyles_default__2D1LR MemberInput_button__kN0AS\"]")
+	@FindBy(xpath = "//*[local-name()='svg'][@height='40']")
 	WebElement clickPlusIcon;
 
-	@FindBy(xpath = "//button[text()='share']")
+	@FindBy(xpath = "//div[@class='SharePanel_submit-div__3ljZH']/button[1]")
 	WebElement clickShareButton;
 
 	
 	public void projectCreation() throws InterruptedException{
 
-		Thread.sleep(2000);
-		createProject.click();
+		
+		
+		
+		
+		WebDriverWait wait = new WebDriverWait(driver, 500);
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='DesktopOptions_root__3mbgI']/div/div[1]/button[1]")));
+
+		WebElement element = driver.findElement(By.xpath("//div[@class='DesktopOptions_root__3mbgI']/div/div[1]/button[1]"));
+		element.click();
+
 		inputProjectName.sendKeys("Test_Project");
-		Thread.sleep(1000);
 		createButton.click();
+
 
 	}
 
 	public void shareProjectScreen() throws InterruptedException {
-        Thread.sleep(2000);
-		WebDriverWait wait = new WebDriverWait(driver,10);
-		wait.until(ExpectedConditions.elementToBeClickable(clickOnPrejectEllipses));
-		clickOnPrejectEllipses.click();
+		Thread.sleep(3000);
+		WebDriverWait wait2 = new WebDriverWait(driver, 500);
+        //click on ellipses
+		wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='Card_wrapper__4JRpX']/div/div/div/div[2]/div"))).click();
+		WebElement element2 = driver.findElement(By.xpath("//div[@class='Card_wrapper__4JRpX']/div/div/div/div[2]/div"));
+		element2.click();
+		Thread.sleep(2000);
+		element2.click();
 		clickOnShareProject.click();
 
 	}

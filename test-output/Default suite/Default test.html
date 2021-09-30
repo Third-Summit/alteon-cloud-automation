@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 10 17:19:54 EDT 2021</td>
+<td>Started on:</td><td>Wed Sep 29 21:02:12 EDT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>109 seconds (109315 ms)</td>
+<tr><td>Total time:</td><td>56 seconds (56468 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,30 +75,40 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Share Project", "Optional[user shares a project to another user]"</td>
-<td><div><pre>com.twilio.exception.ApiException: Authenticate
-	at com.twilio.rest.api.v2010.account.MessageReader.pageForRequest(MessageReader.java:243)
-	at com.twilio.rest.api.v2010.account.MessageReader.firstPage(MessageReader.java:170)
-	at com.twilio.rest.api.v2010.account.MessageReader.read(MessageReader.java:150)
-	at com.twilio.base.Reader.read(Reader.java:24)
-	at pageObjectModel.ShareProject_POM.getMessages2(ShareProject_POM.java:167)
-	at pageObjectModel.ShareProject_POM.getMessage2(ShareProject_POM.java:162)
-	at pageObjectModel.ShareProject_POM.fetchOtp(ShareProject_POM.java:173)
-	at stepDefinition.ShareaProject.And_otp_is_fetched(ShareaProject.java:77)
-	at ✽.otp is fetched(file:///Users/duhachowdhury/eclipse-workspace/AlteonIo/src/test/java/Features/ShareProject.feature:16)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1696136701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1696136701'><pre>com.twilio.exception.ApiException: Authenticate
-	at com.twilio.rest.api.v2010.account.MessageReader.pageForRequest(MessageReader.java:243)
-	at com.twilio.rest.api.v2010.account.MessageReader.firstPage(MessageReader.java:170)
-	at com.twilio.rest.api.v2010.account.MessageReader.read(MessageReader.java:150)
-	at com.twilio.base.Reader.read(Reader.java:24)
-	at pageObjectModel.ShareProject_POM.getMessages2(ShareProject_POM.java:167)
-	at pageObjectModel.ShareProject_POM.getMessage2(ShareProject_POM.java:162)
-	at pageObjectModel.ShareProject_POM.fetchOtp(ShareProject_POM.java:173)
-	at stepDefinition.ShareaProject.And_otp_is_fetched(ShareaProject.java:77)
-	at ✽.otp is fetched(file:///Users/duhachowdhury/eclipse-workspace/AlteonIo/src/test/java/Features/ShareProject.feature:16)
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user is able to sign up", "Optional[Sign Up]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//*[contains(text(),&apos;Verify Email&apos;)]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Duhas-Air&apos;, ip: &apos;fe80:0:0:0:1048:fefd:5437:e7f5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;16.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.getText(Unknown Source)
+	at pageObjectModel.SignUp_POM.ClickCreateAnAccount(SignUp_POM.java:110)
+	at stepDefinition.UserSignUp.clicks_on_button(UserSignUp.java:49)
+	at ✽.clicks on &apos;Create an Account&apos; button(file:///Users/duhachowdhury/eclipse-workspace/AlteonIo/src/test/java/Features/SignUp.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1235369428", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1235369428'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//*[contains(text(),&apos;Verify Email&apos;)]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Duhas-Air&apos;, ip: &apos;fe80:0:0:0:1048:fefd:5437:e7f5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;16.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.getText(Unknown Source)
+	at pageObjectModel.SignUp_POM.ClickCreateAnAccount(SignUp_POM.java:110)
+	at stepDefinition.UserSignUp.clicks_on_button(UserSignUp.java:49)
+	at ✽.clicks on &apos;Create an Account&apos; button(file:///Users/duhachowdhury/eclipse-workspace/AlteonIo/src/test/java/Features/SignUp.feature:8)
 </pre></div></td>
-<td>108</td>
+<td>56</td>
 <td>runner.TestRunner@a4102b8</td></tr>
 </table><p>
 </body>

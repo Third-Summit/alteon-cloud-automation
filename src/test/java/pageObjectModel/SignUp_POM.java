@@ -43,8 +43,8 @@ public class SignUp_POM extends Config{
 
 	@FindBy(xpath = "//input[@name='password']")
 	public WebElement password;
-
-	@FindBy(xpath = "//input[@name='passwordConfirm']")
+	//*[@id="requestDemo"]/div[2]/div/form/div[4]/div[2]/div/input
+	@FindBy(xpath = "//*[@id=\"requestDemo\"]/div[2]/div/form/div[4]/div[2]/div/input")
 	public WebElement passwordConfirm;
 
 	@FindBy(xpath = "//button[contains(text(),'Create an Account')]")
@@ -55,8 +55,8 @@ public class SignUp_POM extends Config{
 
 	@FindBy(xpath = "//a[@title = 'VERIFY']")
 	public WebElement verifyEmailLinkInEmail;
-
-	@FindBy(xpath = "//h2[contains(text(),'Account Verified')]")
+	//*[@id="requestDemo"]/div[2]/header/h1
+	@FindBy(xpath = "//*[@id=\"requestDemo\"]/div[2]/header/h1")
 	public WebElement accountVerifiedHeader;
 
 	@FindBy(xpath = "//span[@id='email_ch_text']")
@@ -99,8 +99,8 @@ public class SignUp_POM extends Config{
 		firstName.sendKeys(faker.name().firstName());
 		lastName.sendKeys(faker.name().lastName());
 		email.sendKeys(emailFake);
-//		phoneNumber.sendKeys(faker.phoneNumber().cellPhone());
-		phoneNumber.sendKeys("9990000119");
+	//	phoneNumber.sendKeys(faker.phoneNumber().cellPhone());
+		phoneNumber.sendKeys("5554555554");
 		password.sendKeys("Test1234$");
 		passwordConfirm.sendKeys("Test1234$");
 	}
