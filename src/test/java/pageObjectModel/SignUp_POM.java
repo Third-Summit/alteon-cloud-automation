@@ -86,7 +86,7 @@ public class SignUp_POM extends Config{
 		}
 		windowHandles = new ArrayList<>(driver.getWindowHandles());
 		driver.switchTo().window(windowHandles.get(1));
-		driver.get("https://dev.alteon.io");
+		driver.get("https://qa.alteon.io");
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -100,7 +100,8 @@ public class SignUp_POM extends Config{
 		lastName.sendKeys(faker.name().lastName());
 		email.sendKeys(emailFake);
 	//	phoneNumber.sendKeys(faker.phoneNumber().cellPhone());
-		phoneNumber.sendKeys("5554555554");
+		phoneNumber.sendKeys(faker.phoneNumber().phoneNumber());
+		
 		password.sendKeys("Test1234$");
 		passwordConfirm.sendKeys("Test1234$");
 	}

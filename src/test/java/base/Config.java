@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -22,8 +23,13 @@ public class Config {
 		// setup browser
 		
 		if (driverType.equalsIgnoreCase("ch")){
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			WebDriverManager.chromedriver().setup();			
+			ChromeOptions ChromeOptions = new ChromeOptions();
+			ChromeOptions.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
+			driver = new ChromeDriver(ChromeOptions);
+			
+			
+			
 		} 
 		else if (driverType.equalsIgnoreCase("sa")){
 			DriverManagerType safari = DriverManagerType.SAFARI;
