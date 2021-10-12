@@ -30,9 +30,10 @@ public class Hooksteps extends Config{
 		switch (baseURL){
 		case "qa":
 			url = "https://qa.alteon.io/";
+			break;
  
 		case "dev":
-			url = "https://qa.alteon.io/";
+			url = "https://dev.alteon.io/";
 			break;
 		case "pre_prod":
 			url = "https://alteon.io/";
@@ -53,7 +54,7 @@ public class Hooksteps extends Config{
 				System.out.println(scenario.getName());
 			}
 		} finally {
-		driver.quit();
+         driver.quit();
 		}
 	}
 

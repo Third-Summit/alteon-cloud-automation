@@ -42,7 +42,7 @@
 			<artifactId>twilio</artifactId>
 			<version>8.18.0</version>
 		</dependency>
-                         <!-- FAKE DATA -->
+                         <!-- Test DATA -->
 		<dependency>
 			<groupId>com.github.javafaker</groupId>
 			<artifactId>javafaker</artifactId>

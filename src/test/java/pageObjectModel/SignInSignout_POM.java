@@ -1,10 +1,13 @@
 package pageObjectModel;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.Config;
 
@@ -33,8 +36,8 @@ public class SignInSignout_POM extends Config{
 	    public WebElement OTPfield;
 	    
 	    
-	    @FindBy(xpath = "//*[@id=\"root\"]/main/div[1]/div[1]/div/div/div/div/div")
-	    public WebElement signOutDropDown;
+//	    @FindBy(xpath = "//*[@id=\"root\"]/main/div[1]/div[1]/div/div/div/div/div")
+//	    public WebElement signOutDropDown;
 	    
 	    @FindBy(xpath = "//span[text()='Sign Out']/parent::div/parent::button")
 	    public WebElement signOut;
@@ -61,6 +64,10 @@ public class SignInSignout_POM extends Config{
 		
 
 		public void signOut() throws InterruptedException {
+			WebDriverWait wait = new WebDriverWait(driver, 500);
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"root\"]/main/div[1]/div[1]/div/div/div/div/div")));
+			WebElement signOutDropDown = driver.findElement(By.xpath("//*[@id=\"root\"]/main/div[1]/div[1]/div/div/div/div/div"));
+
 			signOutDropDown.click();
 		    Thread.sleep(500);
 		    signOut.click();

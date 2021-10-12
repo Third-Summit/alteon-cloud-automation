@@ -24,12 +24,10 @@ public class Config {
 		
 		if (driverType.equalsIgnoreCase("ch")){
 			WebDriverManager.chromedriver().setup();			
-			ChromeOptions ChromeOptions = new ChromeOptions();
-			ChromeOptions.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
-			driver = new ChromeDriver(ChromeOptions);
-			
-			
-			
+		//	ChromeOptions ChromeOptions = new ChromeOptions();
+		//	ChromeOptions.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
+		//	driver = new ChromeDriver(ChromeOptions);
+			driver = new ChromeDriver();
 		} 
 		else if (driverType.equalsIgnoreCase("sa")){
 			DriverManagerType safari = DriverManagerType.SAFARI;
@@ -39,14 +37,17 @@ public class Config {
 		else if (driverType.equalsIgnoreCase("ff")){
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
+			
 		} else if (driverType.equalsIgnoreCase("ie")){
 			WebDriverManager.iedriver().setup();
 			driver  = new InternetExplorerDriver();
 		}
+		
 		else if (driverType.equalsIgnoreCase("eg")){
 			WebDriverManager.edgedriver().setup();
 			driver  = new EdgeDriver();
 		}
+		
 		else {
 			System.out.println("driver isn't initiated properly");
 		}

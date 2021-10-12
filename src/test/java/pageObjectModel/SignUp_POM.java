@@ -92,16 +92,16 @@ public class SignUp_POM extends Config{
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-
+//[2-9][0-8][0-9])([2-9][0-9]{2})([0-9]{4})(\\se?x?t?(\\d*))?\r\n
 	}
 
 	public void userFillsOutCreateAccountForm () {
 		firstName.sendKeys(faker.name().firstName());
 		lastName.sendKeys(faker.name().lastName());
 		email.sendKeys(emailFake);
-	//	phoneNumber.sendKeys(faker.phoneNumber().cellPhone());
-		phoneNumber.sendKeys(faker.phoneNumber().phoneNumber());
-		
+		//using regex to generate phone number without country code
+		phoneNumber.sendKeys(faker.instance().expression("#{regexify '" + "([2-9][0-8][0-9])([2-9][0-9]{2})([0-9][0-9][0-9]{4})"
+				+ "" + "'}"));
 		password.sendKeys("Test1234$");
 		passwordConfirm.sendKeys("Test1234$");
 	}

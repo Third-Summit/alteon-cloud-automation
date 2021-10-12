@@ -4,7 +4,7 @@ Feature: Sign Up
     Given user navigates to emailfake website
     And copy the generated email
     Then user navigates to alteon website in a new tab
-    When user fills in 'first_name', 'last_name', email, phonenumber '3471231234' and 'password'
+    When user fills in 'first_name', 'last_name', email, phonenumber '' and 'password'
     And clicks on 'Create an Account' button
     Then user navigates back to EmailFake website to activate account
     And user clicks on "verify email" button

@@ -10,6 +10,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -82,7 +83,14 @@ public class ShareProjectAndJoinProject_POM extends Config{
 	}
 
 	public void shareProjectScreen() throws InterruptedException {
-		Thread.sleep(3000);
+		
+		//Instantiate Action Class        
+        Actions actions = new Actions(driver);
+        //Retrieve WebElement 'Music' to perform mouse hover 
+    	WebElement mainProject = driver.findElement(By.xpath("//*[@id=\"root\"]/main/div[2]/section/div/div/div/section/div[1]/article/div/div/div"));
+    	//Mouse hover 
+    	actions.moveToElement(mainProject).perform();
+		
 		WebDriverWait wait2 = new WebDriverWait(driver, 500);
         //click on ellipses
 		wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='Card_wrapper__4JRpX']/div/div/div/div[2]/div"))).click();

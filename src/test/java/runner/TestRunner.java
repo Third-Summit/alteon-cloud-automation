@@ -9,9 +9,9 @@ import io.cucumber.testng.CucumberOptions;
 		features = "src/test/java/Features", //"src/test/java/Features/feature name if you want to run a specific feature
 		glue = "stepDefinition",
 		monochrome = true, //displays console output in a readable format
-		//strict = true,//it will check if steps are not defined in step definition file
+		strict = true,//it will check if steps are not defined in step definition file
 		dryRun = false,
-		 plugin = {
+		plugin = {
 	                "json:target/cucumber.json"
 	        })
 public class TestRunner extends AbstractTestNGCucumberTests {
