@@ -22,28 +22,28 @@ public class Config {
 		
 		// setup browser
 		
-		if (driverType.equalsIgnoreCase("ch")){
+		if (driverType.equalsIgnoreCase("chrome")){
 			WebDriverManager.chromedriver().setup();			
 		//	ChromeOptions ChromeOptions = new ChromeOptions();
 		//	ChromeOptions.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
 		//	driver = new ChromeDriver(ChromeOptions);
 			driver = new ChromeDriver();
 		} 
-		else if (driverType.equalsIgnoreCase("sa")){
+		else if (driverType.equalsIgnoreCase("safari")){
 			DriverManagerType safari = DriverManagerType.SAFARI;
 			WebDriverManager.getInstance(safari).setup();
 			driver  = new SafariDriver();
 		}
-		else if (driverType.equalsIgnoreCase("ff")){
+		else if (driverType.equalsIgnoreCase("fireFox")){
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			
-		} else if (driverType.equalsIgnoreCase("ie")){
+		} else if (driverType.equalsIgnoreCase("internetExplorer")){
 			WebDriverManager.iedriver().setup();
 			driver  = new InternetExplorerDriver();
 		}
 		
-		else if (driverType.equalsIgnoreCase("eg")){
+		else if (driverType.equalsIgnoreCase("edgeDriver")){
 			WebDriverManager.edgedriver().setup();
 			driver  = new EdgeDriver();
 		}

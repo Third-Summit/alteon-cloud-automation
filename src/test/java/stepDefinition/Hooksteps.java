@@ -11,12 +11,12 @@ import io.cucumber.java.Scenario;
 
 public class Hooksteps extends Config{
 
-	static String url;
+	public static String url;
 	static String baseURL = System.getProperty("env");
 	static String browserType = System.getProperty("browser");
 	// default browser and env
-	static String defaultBrowser = "ch";
-	static String defaultEnv = "qa";
+	static String defaultBrowser = "chrome";
+    static String defaultEnv = "qa_env";
 
 	@Before
 	public void openBrowser(){
@@ -28,14 +28,14 @@ public class Hooksteps extends Config{
 		}
 		driver = initDriver (browserType);
 		switch (baseURL){
-		case "qa":
+		case "qa_env":
 			url = "https://qa.alteon.io/";
 			break;
  
-		case "dev":
+		case "dev_env":
 			url = "https://dev.alteon.io/";
 			break;
-		case "pre_prod":
+		case "pre_prod_env":
 			url = "https://alteon.io/";
 			break;
 
@@ -54,7 +54,7 @@ public class Hooksteps extends Config{
 				System.out.println(scenario.getName());
 			}
 		} finally {
-         driver.quit();
+        driver.quit();
 		}
 	}
 

@@ -36,6 +36,8 @@ public class Upgrademembership extends Config{
 	   upgradeMembership.enterBillingInfoAndClickApply();
    }
 
+ //unable to catch purchase successful message 
+   //make sure to add a function to click apply while upgrading membership if the payment method is already there
 
 
 }

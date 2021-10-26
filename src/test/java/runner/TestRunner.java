@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
 		strict = true,//it will check if steps are not defined in step definition file
 		dryRun = false,
 		plugin = {
-	                "json:target/cucumber.json"
+				 "json:target/cucumber.json"
 	        })
 public class TestRunner extends AbstractTestNGCucumberTests {
 

@@ -14,6 +14,7 @@ import org.testng.Assert;
 import com.github.javafaker.Faker;
 
 import base.Config;
+import stepDefinition.Hooksteps;
 
 public class SignUp_POM extends Config{
 
@@ -86,13 +87,12 @@ public class SignUp_POM extends Config{
 		}
 		windowHandles = new ArrayList<>(driver.getWindowHandles());
 		driver.switchTo().window(windowHandles.get(1));
-		driver.get("https://qa.alteon.io");
+		driver.get(Hooksteps.url);
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-//[2-9][0-8][0-9])([2-9][0-9]{2})([0-9]{4})(\\se?x?t?(\\d*))?\r\n
 	}
 
 	public void userFillsOutCreateAccountForm () {

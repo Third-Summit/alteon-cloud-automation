@@ -39,19 +39,18 @@ public class ShareAProject extends Config{
 
     	sharePro.enterEmailAndSelectPermission();
 	}
-    
+
     @And ("user shares the project")
 	public void user_shares_the_project() throws InterruptedException {
 
     	sharePro.shareButton();
 	}
-    
+
     @Then ("user sign out")
     public void user_sign_out() throws InterruptedException {
-        //   util.log_out();
+		Thread.sleep(5000);
+          util.log_out();
 	}
-
-    
 
 
 }

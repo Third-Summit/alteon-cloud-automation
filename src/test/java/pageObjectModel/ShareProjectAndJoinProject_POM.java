@@ -30,7 +30,7 @@ public class ShareProjectAndJoinProject_POM extends Config{
      String alteonJoinCode;
 
 	public ShareProjectAndJoinProject_POM (WebDriver driver) {
-		PageFactory.initElements(driver, this);  
+		PageFactory.initElements(driver, this);
 		Config.driver = driver;
 	}
 
@@ -63,13 +63,16 @@ public class ShareProjectAndJoinProject_POM extends Config{
 	@FindBy(xpath = "//div[@class='SharePanel_submit-div__3ljZH']/button[1]")
 	WebElement clickShareButton;
 
-	
+	@FindBy(xpath = "//p[text()='Share successful!']")
+	WebElement shareSuccessfulToastNotification;
+
+
 	public void projectCreation() throws InterruptedException{
 
-		
-		
-		
-		
+
+
+
+
 		WebDriverWait wait = new WebDriverWait(driver, 500);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='DesktopOptions_root__3mbgI']/div/div[1]/button[1]")));
 
@@ -83,14 +86,14 @@ public class ShareProjectAndJoinProject_POM extends Config{
 	}
 
 	public void shareProjectScreen() throws InterruptedException {
-		
-		//Instantiate Action Class        
+
+		//Instantiate Action Class
         Actions actions = new Actions(driver);
-        //Retrieve WebElement 'Music' to perform mouse hover 
+        //Retrieve WebElement 'Music' to perform mouse hover
     	WebElement mainProject = driver.findElement(By.xpath("//*[@id=\"root\"]/main/div[2]/section/div/div/div/section/div[1]/article/div/div/div"));
-    	//Mouse hover 
+    	//Mouse hover
     	actions.moveToElement(mainProject).perform();
-		
+
 		WebDriverWait wait2 = new WebDriverWait(driver, 500);
         //click on ellipses
 		wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='Card_wrapper__4JRpX']/div/div/div/div[2]/div"))).click();
@@ -118,6 +121,10 @@ public class ShareProjectAndJoinProject_POM extends Config{
 		clickPlusIcon.click();
 		Thread.sleep(500);
 		clickShareButton.click();
+		Thread.sleep(1000);
+		if(shareSuccessfulToastNotification.isDisplayed())
+			System.out.println("Toast Notification Message ==> "+shareSuccessfulToastNotification.getText());
+
 
 	}
 

@@ -50,7 +50,7 @@ public class SignInSignout_POM extends Config{
 	    }
 	    public void enterEmailPassword() {
 	    	email.sendKeys("adobe.thirdsummit@mail.com");
-	    	password.sendKeys("AdobeTesting01!@");
+	    	password.sendKeys("Test1234$");
 	    	logInButton.click();
 	    }
 	    public void enteringOTP () {
