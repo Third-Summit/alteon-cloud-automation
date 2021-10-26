@@ -1,0 +1,774 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-25T23:56:00.587Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9323740000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooksteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Validate user is able to sign up",
+        "description": "",
+        "id": "sign-up;validate-user-is-able-to-sign-up",
+        "after": [
+          {
+            "result": {
+              "duration": 168783000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooksteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9068290000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user navigates to emailfake website",
+            "match": {
+              "location": "stepDefinition.UserSignUp.user_navigates_to_emailfake_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2112856000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "copy the generated email",
+            "match": {
+              "location": "stepDefinition.UserSignUp.copy_the_generated_email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11627590000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to alteon website in a new tab",
+            "match": {
+              "location": "stepDefinition.UserSignUp.user_navigates_to_alteon_website_in_a_new_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2908869000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user fills in \u0027first_name\u0027, \u0027last_name\u0027, email, phonenumber \u0027\u0027 and \u0027password\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027first_name\u0027",
+                  "offset": 14
+                },
+                {
+                  "val": "\u0027last_name\u0027",
+                  "offset": 28
+                },
+                {
+                  "val": "\u0027\u0027",
+                  "offset": 60
+                },
+                {
+                  "val": "\u0027password\u0027",
+                  "offset": 67
+                }
+              ],
+              "location": "stepDefinition.UserSignUp.user_fills_in_email_phonenumber_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3481316000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "clicks on \u0027Create an Account\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Create an Account\u0027",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinition.UserSignUp.clicks_on_button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2022065000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user navigates back to EmailFake website to activate account",
+            "match": {
+              "location": "stepDefinition.UserSignUp.user_navigates_back_to_EmailFake_website_to_activate_account()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12742567000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks on \"verify email\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"verify email\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.UserSignUp.user_clicks_on_button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8179000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user is taken to alteon website in new tab",
+            "match": {
+              "location": "stepDefinition.UserSignUp.user_is_taken_to_alteon_website_in_new_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2315404000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Account Verified message is displayed",
+            "match": {
+              "location": "stepDefinition.UserSignUp.account_verified_message_is_displayed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Sign Up",
+    "description": "",
+    "id": "sign-up",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/a.SignUp.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-25T23:56:56.419Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6699868000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooksteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verify User is able to login",
+        "description": "",
+        "id": "user-portal-sign-up-page-functionalities-verify-that-user-is-able-to-sign-up-and-logged-in.;verify-user-is-able-to-login",
+        "after": [
+          {
+            "result": {
+              "duration": 132581000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooksteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 542508000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to Alteon.io home page and clicks on the login link",
+            "match": {
+              "location": "stepDefinition.UserSignInSignout.user_navigates_to_alteon_io_home_page_and_clicks_on_the_login_link()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2113804000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters email and password in appropriate fields",
+            "match": {
+              "location": "stepDefinition.UserSignInSignout.user_enters_email_and_password_in_appropriate_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1046729000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user signs in after entering correct OTP",
+            "match": {
+              "location": "stepDefinition.UserSignInSignout.user_signs_in_after_entering_correct_OTP()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2428033000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user signs out",
+            "match": {
+              "location": "stepDefinition.UserSignInSignout.user_signs_out()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "User Portal Sign Up Page Functionalities Verify that User is able to sign up and logged in.",
+    "description": "",
+    "id": "user-portal-sign-up-page-functionalities-verify-that-user-is-able-to-sign-up-and-logged-in.",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/b.LogInLogout.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-25T23:57:09.428Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6701463000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooksteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "create and delete project",
+        "description": "",
+        "id": "i-want-to-be-able-create-a-project-and-delete-it;create-and-delete-project",
+        "after": [
+          {
+            "result": {
+              "duration": 83406000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooksteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8238526000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user logs in to alteon cloud",
+            "match": {
+              "location": "stepDefinition.CreateAndDeleteProject.user_logs_in_to_alteon_cloud()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2408921000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user creates a project",
+            "match": {
+              "location": "stepDefinition.CreateAndDeleteProject.user_creates_a_project()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3980823000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user deletes the account",
+            "match": {
+              "location": "stepDefinition.CreateAndDeleteProject.user_deletes_the_account()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "I want to be able create a project and delete it",
+    "description": "",
+    "id": "i-want-to-be-able-create-a-project-and-delete-it",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/c.Create\u0026DeleteProject.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-25T23:57:30.860Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6411953000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooksteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "upgrade membership and adding payment method",
+        "description": "",
+        "id": "i-want-to-be-able-upgrade-membership;upgrade-membership-and-adding-payment-method",
+        "after": [
+          {
+            "result": {
+              "duration": 144645000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooksteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8173881000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "log in to alteon cloud",
+            "match": {
+              "location": "stepDefinition.Upgrademembership.log_in_to_alteon_cloud()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2309053000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "go to billing page",
+            "match": {
+              "location": "stepDefinition.Upgrademembership.go_to_billing_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 499893000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on Upgrade Membership button and adds storage",
+            "match": {
+              "location": "stepDefinition.Upgrademembership.user_clicks_on_upgrade_membership_button_and_adds_storage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41255088000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user enters billing info and click apply",
+            "match": {
+              "location": "stepDefinition.Upgrademembership.user_enters_billing_info_and_click_apply()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "I want to be able upgrade membership",
+    "description": "",
+    "id": "i-want-to-be-able-upgrade-membership",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/d.UpgradeMembership.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-25T23:58:29.673Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7212455000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooksteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "increase Storage",
+        "description": "",
+        "id": "user-is-buying-more-storage;increase-storage",
+        "after": [
+          {
+            "result": {
+              "duration": 90093000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooksteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8304116000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "sign in to Alteon",
+            "match": {
+              "location": "stepDefinition.AddStorage.sign_in_to_Alteon()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2193613000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "go to plans and billing page",
+            "match": {
+              "location": "stepDefinition.AddStorage.go_to_plans_and_billing_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2459204000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "increase intended TB",
+            "match": {
+              "location": "stepDefinition.AddStorage.increase_intended_TB()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2092879000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click apply",
+            "match": {
+              "location": "stepDefinition.AddStorage.Click_apply()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1030037000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "confirm the successful purchase",
+            "match": {
+              "location": "stepDefinition.AddStorage.confirm_the_successful_purchase()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User is buying more storage",
+    "description": "",
+    "id": "user-is-buying-more-storage",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/e.UpgradeStorage.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-25T23:58:53.069Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6357768000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooksteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "downgrade storage Storage",
+        "description": "",
+        "id": "user-is-downgrading-storage;downgrade-storage-storage",
+        "after": [
+          {
+            "result": {
+              "duration": 141917000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooksteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8163796000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "sign in to Alteon cloud",
+            "match": {
+              "location": "stepDefinition.DowngradeStorage.sign_in_to_Alteon_cloud()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2168220000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "go to the billing page",
+            "match": {
+              "location": "stepDefinition.DowngradeStorage.go_to_the_billing_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4330459000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "decrease intended TB",
+            "match": {
+              "location": "stepDefinition.DowngradeStorage.decrease_intended_TB()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2113737000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click apply button",
+            "match": {
+              "location": "stepDefinition.DowngradeStorage.Click_apply_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1119373000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "confirm the successful downgrade message",
+            "match": {
+              "location": "stepDefinition.DowngradeStorage.confirm_the_successful_downgrade_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User is downgrading storage",
+    "description": "",
+    "id": "user-is-downgrading-storage",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/f.DowngradeStorage.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-25T23:59:17.477Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6673673000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooksteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Share Project",
+        "description": "",
+        "id": "user-shares-a-project-to-another-user;share-project",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d95.0.4638.54)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Duhas-Air\u0027, ip: \u0027fe80:0:0:0:18a7:c482:dfad:6a23%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.4\u0027, java.version: \u002716.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: /var/folders/jv/rwcjhkmn7gq...}, goog:chromeOptions: {debuggerAddress: localhost:57957}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 306769cee82f64aa2329cddbda796fe3\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)\n\tat stepDefinition.Hooksteps.tearDown(Hooksteps.java:52)\n",
+              "duration": 63850000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooksteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8216104000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user sign in to Alteon",
+            "match": {
+              "location": "stepDefinition.ShareAProject.user_sign_in_to_alteon()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2520973000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user creates a test project",
+            "match": {
+              "location": "stepDefinition.ShareAProject.user_creates_a_test_project()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d95.0.4638.54)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Duhas-Air\u0027, ip: \u0027fe80:0:0:0:18a7:c482:dfad:6a23%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002711.4\u0027, java.version: \u002716.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: /var/folders/jv/rwcjhkmn7gq...}, goog:chromeOptions: {debuggerAddress: localhost:57957}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 306769cee82f64aa2329cddbda796fe3\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027Card_wrapper__4JRpX\u0027]/div/div/div/div[2]/div}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\n\tat pageObjectModel.ShareProjectAndJoinProject_POM.shareProjectScreen(ShareProjectAndJoinProject_POM.java:99)\n\tat stepDefinition.ShareAProject.user_clicks_on_share_project_button(ShareAProject.java:34)\n\tat ✽.user clicks on share project button(file:///Users/duhachowdhury/eclipse-workspace/AlteonIo/src/test/java/Features/g.ShareProject.feature:8)\n",
+              "duration": 364458700000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user clicks on share project button",
+            "match": {
+              "location": "stepDefinition.ShareAProject.user_clicks_on_share_project_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user enters email and selects permission",
+            "match": {
+              "location": "stepDefinition.ShareAProject.user_enters_email_and_selects_permission()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user shares the project",
+            "match": {
+              "location": "stepDefinition.ShareAProject.user_shares_the_project()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user sign out",
+            "match": {
+              "location": "stepDefinition.ShareAProject.user_sign_out()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "user shares a project to another user",
+    "description": "",
+    "id": "user-shares-a-project-to-another-user",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/g.ShareProject.feature",
+    "tags": []
+  }
+]
